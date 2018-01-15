@@ -17,9 +17,16 @@ const average = (...numbers) => {
 console.log(average(5, 5, 10, 50));
 console.log(average(6, 1, 34, 2));
 
+//Ad.3 with reduce()
+const avg = [5, 5, 10, 50].reduce((acc, cur, index, array) => {
+    return acc + (cur / array.length)
+}, 0);
+console.log(avg);
+
 //Ad.4
-const grades = [5, 5, 5, 5, 4, 3, 3, 2, 1];
+const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 console.log(average(...grades));
+
 
 //Ad.5
 const data = [1, 4, 'Iwona', false, 'Nowak'];

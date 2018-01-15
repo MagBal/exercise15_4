@@ -32,8 +32,14 @@ var average = function average() {
 console.log(average(5, 5, 10, 50));
 console.log(average(6, 1, 34, 2));
 
+//Ad.3 with reduce()
+var avg = [5, 5, 10, 50].reduce(function (acc, cur, index, array) {
+    return acc + cur / array.length;
+}, 0);
+console.log(avg);
+
 //Ad.4
-var grades = [5, 5, 5, 5, 4, 3, 3, 2, 1];
+var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];
 console.log(average.apply(undefined, grades));
 
 //Ad.5
