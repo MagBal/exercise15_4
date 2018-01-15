@@ -3,9 +3,7 @@ const sayHello = (name = 'Hello', name1 = 'World') => console.log(`${name} ${nam
 sayHello();
 
 //Ad.2
-const multiply = (x, y = 1) => {
-    return x * y
-};
+const multiply = (x, y = 1) => x * y;
 console.log(multiply(2, 5));
 console.log(multiply(6, 6));
 console.log(multiply(5));
